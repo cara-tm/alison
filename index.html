@@ -1,0 +1,205 @@
+
+<!DOCTYPE html> <!--[if lt IE 9 & !IEMobile]><html itemscope itemtype="http://schema.org/WebPage" lang="en-US" dir="ltr" class="ie en no-js"><![endif]--> <!--[if gt IE 8 | IEMobile]><!--> <html itemscope itemtype="http://schema.org/WebPage" lang="en-US" dir="ltr" class="en no-js"><!--<![endif]--> <head> <meta charset="utf-8">
+<title>Alison CSS framework for peopole who makes large target websites over the world.</title> <meta name="robots" content="index,follow,noodp,noydir"> <meta name="description" lang="en-US" content="A tool that aims to reconcile Mobiles, Old (IE 5.x) plus Modern Browsers & your Users focused on Latest Enhancements in Web Design but with a Strong, Effective Base."> <meta name="keywords" lang="en-US" content="CSS framework IE 5 capable,HTML5 CSS Grid for all browsers"> <meta name=viewport content="width=device-width, initial-scale=1"> <link rel="author" href="https://plus.google.com/+PatrickLEFEVRE-lowel" title="Patrick LEFEVRE"> <!--[if lt IE 9 & !IEMobile]><link href="css/fonts_without_base64.css" media="all" rel="stylesheet"><![endif]--> <!--[if gt IE 8 | IEMobile]><!--><link href="css/fonts_with_base64.css" media="all" rel="stylesheet"><!--<![endif]--> <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7"><meta http-equiv="X-UA-Compatible" content="chrome=1"><meta http-equiv="imagetoolbar" content="no"><![endif]--> <script>
+<!--	<% include "/path/to/initial.js" %> -->
+/*!
+loadCSS: CSS file loader asynchronously. [c]2014 @scottjehl, Filament Group, Inc. Licensed MIT
+*/
+var el=document.querySelector('html');el.classList.remove('no-js');
+function loadCSS(e,t,n){"use strict";var i=window.document.createElement("link");var o=t||window.document.getElementsByTagName("script")[0];i.rel="stylesheet";i.href=e;i.media="only x";o.parentNode.insertBefore(i,o);setTimeout(function(){i.media=n||"all"})};
+// load a file: loadCSS( href, before, media )
+loadCSS( 'css/main.css', '', 'screen' );
+var Detect=(function(){var props="borderRadius,svg,columns,flex".split(","),CSSprefix="Webkit,Moz,O,ms,Khtml".split(","),d=document.createElement("detect"),test=[],p,pty;function TestPrefixes(prop){var Uprop=prop.charAt(0).toUpperCase()+prop.substr(1),All=(prop+' '+CSSprefix.join(Uprop+' ')+Uprop).split(' ');for(var n=0,np=All.length;n<np;n++){if(d.style[All[n]]==="") return true}return false}for(p in props){pty=props[p];test[pty]=TestPrefixes(pty);}return test;}());var html=document.getElementsByTagName('html')[0];for(t in Detect){if(Detect[t]) html.className+=' '+t.toLowerCase()};</script> <style type="text/css" media="all">
+<!--	<% include "/path/to/template-xyz-critical.css" %>	-->
+/*
+ * Critical part (Above-the-Fold)
+ *
+ */
+@charset "UTF-8";
+/*
+ * Reset by E. Meyer
+ * http://meyerweb.com
+ *
+ * Sticky Footer by Ryan Fait
+ * http://ryanfait.com
+ *
+ * Minimal cleafix by N. Gallagher
+ * Image ratio by N. Gallagher
+ * http://nicolasgallagher.com
+ */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,main,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;outline:0;border:0;vertical-align:baseline;background:0 0;font-size:100%;font:inherit}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section{display:block}*{outline-style:none;margin:0;padding:0}body{line-height:1}body *{text-align:left}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}ins{text-decoration:none;font-weight:700}del{text-decoration:line-through}abbr,acronym{cursor:help}table{border-collapse:collapse;border-spacing:0}input[type=submit],label,select{cursor:pointer}:focus{outline:0}a{outline:0 none;-moz-outline:0 none}sup,sub{position:relative;height:0;vertical-align:baseline;_vertical-align:bottom;line-height:1}sup{bottom:1ex;left:-1ex;margin-right:-1ex;font-size:small}sub{top:.5ex}tt,code,kbd,samp,pre,.code{font-family:Consolas,'andale mono','lucida console','courier new',monospace}kbd{background:#fafafa;border-bottom:1px solid gray;border-right:1px solid gray;padding:1px 2px}.cf:after{content:".";display:block;clear:both;visibility:hidden;line-height:0;height:0}.cf{display:inline-block}html[xmlns] .cf{display:block}* html .cf{height:1%}
+/*
+ * Alison CSS grid all browsers capable (IE 5+ minimum)
+ *
+ * @license: MIT license
+ * @author:  Patrick LEFEVRE <patrick<at>lefevre<at>gmail<dot>com>
+ * @public:  You can use this for any projects. You have to keep this comments. 
+ * @date:    18 Sept 2014
+ * @revison: 22 Sept 2014
+ */
+ :root {
+--max-width: 1440px;
+--column-gutter: 2%;
+--fonts-size: 1.5em;
+--footer-height: 140px
+}
+.static{position:static}
+.relative{position:relative}
+.absolute{position:absolute}
+a{color:#333}
+a:hover{color:#000}
+img{display:block;width:100%;height:auto;vertical-align:top;text-align:center}
+/* Layout */
+html *{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing: grayscale}
+html,body{height:100%}
+body{font:normal normal normal 62.5%/1 Arial, sans-serif;-webkit-text-size-adjust:none}
+.top{z-index:-1;top:0;left:0;width:100%;
+/* IE fallback */
+width:75em\9;
+height:9em;margin:0 auto}
+x:-o-prefocus,.top{display:none}
+.wrapper{min-height:100%;height:auto !important;height:100%;margin:0 auto -140px;font-size:1.7em}
+.wrapper{width:95%;
+/* IE fallback */
+width:75em\9;
+max-width:1440px;max-width:var(--max-width);min-height:100%;height:auto !important;height:100%;margin: 0 auto -140px;-webkit-transition:all .5s ease-in-out;transition:all .5s ease-in-out}
+.header-inner{padding:3em 1%;background:#fff;font-family:'Source Sans Pro',sans-serif}
+/* Grid system */
+.c5,.c10,.c20,.c25,.c33,.c30,.c50,.c100{
+float:left;display:inline;margin-bottom:1em;
+/* IE margin hack */
+*margin-right: -3px;
+*padding-right: 3px}
+.c5{width:5%;width:calc(100% * 1 / 20)}
+.c10{width:10%;width:calc(100% * 1 / 10)}
+.c20{width:20%;width:calc(100% * 1 / 5)}
+.c25{width:25%;width:calc(100% * 1 / 4)}
+.c30{
+width:33.33333333333334%;
+/* IE6 only width correction */
+_wid\th:33%;
+width:calc(100% * 1 / 3)}
+/* IE6 <= hack */
+* html .c30{margin-right:-3px;padding-right:3px}
+.c33{width:33.33333333333334%;width:calc(100% * 1 / 3)}
+.c50{width:50%;width:calc(100% * 1 / 2)}
+.c100{width:100%;width:calc(100% * 1 / 1)}
+.clear{clear:both;width:100%;height:0.5px}
+.col p{padding:1em;color:#111}
+@media only screen and (min-width:320px) and (max-width:639px){.c5,.c10,.c20,.c25,.c33,.c30,.c50,.c100{width:100%;transition: all .5s ease-in-out}.footer-inner{width:96% !important;padding-right:2% !important;padding-left:2% !important}}
+@media only screen and (min-width:640px) and (max-width:950px){.c5,.c10,.c20,.c25,.c30{width:100%;transition: all .5s ease-in-out}}
+@media only screen and (max-width:960px){.c5,.c10,.c20,.c25,.c33,.c30,.c50,.c100{}}
+/* End Grid */
+.mt1{margin-top:1em}
+.mr1{margin-right:1em}
+.mb1{margin-bottom:1em}
+.ml1{margin-left:1em}
+.mt2{margin-top:2em}
+.mr2{margin-right:2em}
+.mb2{margin-bottom:2em}
+.ml2{margin-left:2em}
+.mt3{margin-top:3em}
+.mr3{margin-right:3em}
+.mb3{margin-bottom:3em}
+.ml3{margin-left:3em}
+.footer,.gutter{height:140px}
+.wrapper,footer-inner{font-size:1.5em;line-height:1.75em}
+.footer-inner{width:95%;
+/* IE fallback */
+width:116em\9;
+max-width:1440px;max-width:var(--max-width);margin:0 auto;height:85.75%;padding:2em 0 0 0}
+.footer-inner *{padding:0 1%}
+.footer-inner small{display:block;font:normal normal normal 1.5em/1.3em Arial}
+.hero {display:block;overflow:hidden;position:relative;width:100%;max-width:100%;max-height:600px;*height:600px;margin:0 auto 1em;background-image: url(http://placeimg.com/1440/600/nature);background-position:50%;background-repeat:no-repeat;background-size:cover}
+.hero:before{content:"";display:block;width:100%}
+.embed-3by1:before{padding-bottom:33.33333333333334%}
+.embed-2by1:before{padding-bottom:50%}
+.embed-16by9:before{padding-bottom:56.25%}
+.emded-4by3:before{padding-bottom:75%}
+/* Typography */
+h1,h2,h3,h4,h5,h6{}h1{font-size:3em;line-height:1em}h2{font-size:1.2em}p{word-wrap:break-word;-webkit-hyphens:auto;-moz-hyphens:auto;-ms-hyphens:auto;hyphens:auto;/*-webkit-font-feature-settings:"onum" 1,"kern" 1;*/-moz-font-feature-settings:"onum" 1;-moz-font-feature-settings:"onum=1";-ms-font-feature-settings:"onum" 1;-o-font-feature-settings:"onum" 1;font-feature-settings:"onum" 1,"kern" 1}.line,.full-line{display:block;float:right;width:100%;height:1px;margin:0;background:#333;border:0;text-align:center;line-height:0;page-break-before:always}.line{width:96%;margin: 0 2%}hr:after{content: "\2022";background:#fff;color:#000;font:normal normal normal 1.5em/0 Arial}
+/*
+ * Retina display part
+ *
+ * For your @2x images (double size)
+ */
+@media only screen and (-Webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min-device-pixel-ratio: 1.5){body{background:#ddd}.wrapper{font-size:1.7em;font-size:var(--fonts-size)+.2em}hr:after{background:#ddd}}
+@media only screen and (-Webkit-min-device-pixel-ratio: 2), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 4/2), only screen and (min-device-pixel-ratio: 2){body{background:#eee}.wrapper{font-size:2em;font-size:var(--fonts-size)+.5em}hr:after{background:#eee}}
+/*
+ * Out of the Fold: part of non structural layout
+ * Best place is in an external file
+ * Concerns non structural layout: typo, colors, backgrounds etc.
+*/
+.col p,.equal{background:#eee}.col.blank{background: none}.top,.footer{background: #eee}.footer-inner {background: #fff}
+</style>
+</head>
+<body>
+<div class="wrapper">
+<header class="header c100">
+<div class="header-inner">
+<h1>Alison CSS Grid</h1>
+<h2>A tool that aims to reconcile Mobiles, Old (IE 5.x) plus Modern Browsers & your Users <br>
+focused on Latest Enhancements in Web Design but with a Strong, Effective Base.</h2>
+</div>
+<div class="top c100 absolute"></div>
+</header>
+<main class="main cf mb2">
+<div class="c100 hero hero-img embed-3by1"></div>
+<div class="col c100 equal">
+<div class="col c50">
+<p>The actual webdesign fails with templates offers (paid & free) which don't an­swer the real si­tua­tions of final users (poor surfing 2G Smart­Phone band­width in the streets if you're too far from cellular network antena) with huge ja­va­script effects on too big images and <a href="http://www.sitepoint.com/average-page-weights-increase-32-2013/" target="_blank">several me­ga­bytes weight by page</a> ;( Ouch! </p>
+<p>This tool is made with speed in mind and ca­pa­bi­li­ties with a large brow­sers mar­ket. <a href="http://www.html5rocks.com" target="_blank">HTML5</a> & <a href="http://alistapart.com/article/responsive-web-design" target="_blank">Mo­bile first</a>. For real world wi­thout <a href="http://jquery.com" target="_blank">huge ja­va­script li­brary</a>.
+Be­cause we need a simple solution that works fine across all plate­forms (that's sure for in­ter­na­tional e-co­mmerce pro­jects: who re­ally wants to lose cus­to­mers with bro­ken web­sites elements on <a href="http://www.pcworld.com/article/2093741/windows-xp-gained-market-share-in-january-or-did-it.html" target="_blank">current 28.98% Win XP mar­ket</a>?)
+</p>
+</div><div class="col c50"><div class="col c50"><p>Alison isn't a tren­dly hyp­ster frame­work: just few lines of mi­ni­mal code, called "RWD CSS com­po­nents mo­dules". Is it worth to say it works per­fec­tly with the dy­no­saur Inter­net Ex­plo­rer © <del>5.1</del> 6 (and ine­vi­ta­bly with all other upper ver­sions)?</p> <p>Alison is just a real tool for a real world. </p></div> <div class="col c50"><p>
+Bored with <a href="http://getbootstrap.com/" target="_blank">other</a> <a href="http://foundation.zurb.com/" target="_blank">com­plex</a> so­lu­tions? Here a co­lumn is na­med .col, sized sub blocks fo­llow a sim­ple con­ven­tion: a "c" le­tter and num­ber (percent width). Pre­tty sim­ple wi­thout the head­ache. All class attri­butes are short in order to pre­ser­ve your page's wei­ght. Tes­ted with Google ® Page Speed and a uh oh <a href="http://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Fallison.cara-tm.com%2F" target="_blank"><b>100% re­sult challenge</b></a>. Free of charges, under <a href="http://opensource.org/licenses/MIT" target="_blank">MIT li­cense</a>. Damned, Dude! </p> </div> </div> </div>
+<div class="clear"></div>
+<div class="col c100">
+<p>Tested successfully on: <br>
+IE6, IE7, IE8, IE9, IE10, IE11, FireFox 1.5.x + (Mac + PC), FireFox mobile Androïd, Camino 1.6 + Mac, Opera 9.5 Mac, Opera 12.x + Mac, Opera Mini Androïd, Opera Classic Androïd, Opera Opera Next Androïd, Chrome Androïd, Chrome Mac, Next Browser Androïd, CM Browser Androïd, and all the 47 browsers renditions on 'Opera Simulator' (Mac).</p>
+</div>
+<div class="clear"></div>
+<div class="col c50"><div class="col c25"><p>Praesent et ipsum fermentum metus convallis consequat. Suspendisse in quam. Integer viverra consequat nisi. Donec rutrum turpis non eros.</p> </div> <div class="col c25"><p>Praesent et ipsum fermentum metus convallis consequat. Suspendisse in quam. Integer viverra consequat nisi. Donec rutrum turpis non eros. </p> </div> <div class="col c25"><p>Praesent et ipsum fermentum metus convallis consequat. Suspendisse in quam. Integer viverra consequat nisi. Donec rutrum turpis non eros. </p> </div> <div class="col c25"><p>Praesent et ipsum fermentum metus convallis consequat. Suspendisse in quam. Integer viverra consequat nisi. Donec rutrum turpis non eros.</p> </div> </div>
+<div class="col c50"><div class="col c25"><p>Praesent et ipsum fermentum metus convallis consequat. Suspendisse in quam. Integer viverra consequat nisi. Donec rutrum turpis non eros.</p> </div> <div class="col c25"><p>Praesent et ipsum fermentum metus convallis consequat. Suspendisse in quam. Integer viverra consequat nisi. Donec rutrum turpis non eros. </p> </div> <div class="col c25"><p>Praesent et ipsum fermentum metus convallis consequat. Suspendisse in quam. Integer viverra consequat nisi. Donec rutrum turpis non eros. </p> </div> <div class="col c25"><p>Praesent et ipsum fermentum metus convallis consequat. Suspendisse in quam. Integer viverra consequat nisi. Donec rutrum turpis non eros.</p> </div> </div>
+<div class="clear"></div>
+<div class="col c100"> <div class="col c25"><p>Praesent et ipsum fermentum metus convallis consequat. Suspendisse in quam. Integer viverra consequat nisi. Donec rutrum turpis non eros.</p> </div> <div class="col c5"></div> <div class="col c25"><p>Praesent et ipsum fermentum metus convallis consequat. Suspendisse in quam. Integer viverra consequat nisi. Donec rutrum turpis non eros.</p> </div> <div class="col c5"></div> <div class="col c25"><p>Praesent et ipsum fermentum metus convallis consequat. Suspendisse in quam. Integer viverra consequat nisi. Donec rutrum turpis non eros.</p> </div> <div class="col c5"></div> <div class="col c10"><p>Last ti&#173;ny co&#173;lumn.</p> </div> </div>
+<div class="clear"></div>
+<div class="col c25"><p>Praesent et ipsum fermentum metus convallis consequat. Suspendisse in quam. Integer viverra consequat nisi. Donec rutrum turpis non eros.</p> </div> <div class="col c25"><p>Praesent et ipsum fermentum metus convallis consequat. Suspendisse in quam. Integer viverra consequat nisi. Donec rutrum turpis non eros. </p> </div> <div class="col c25"><p>Praesent et ipsum fermentum metus convallis consequat. Suspendisse in quam. Integer viverra consequat nisi. Donec rutrum turpis non eros. </p> </div> <div class="col c25"><p>Praesent et ipsum fermentum metus convallis consequat. Suspendisse in quam. Integer viverra consequat nisi. Donec rutrum turpis non eros.</p> </div>
+<div class="clear"></div>
+<div class="col c50"> <div class="col c20"><p>Praesent et ipsum fermentum metus convallis consequat. Suspendisse in quam. Integer viverra consequat nisi. Donec rutrum turpis non eros.</p> </div> <div class="col c20"><p>Praesent et ipsum fermentum metus convallis consequat. Suspendisse in quam. Integer viverra consequat nisi. Donec rutrum turpis non eros. </p> </div> <div class="col c20"><p>Praesent et ipsum fermentum metus convallis consequat. Suspendisse in quam. Integer viverra consequat nisi. Donec rutrum turpis non eros. </p> </div> <div class="col c20"><p>Praesent et ipsum fermentum metus convallis consequat. Suspendisse in quam. Integer viverra consequat nisi. Donec rutrum turpis non eros.</p> </div> <div class="col c20"><p>Praesent et ipsum fermentum metus convallis consequat. Suspendisse in quam. Integer viverra consequat nisi. Donec rutrum turpis non eros.</p> </div> </div>
+<div class="col c50">
+<div class="col c20"><p>Praesent et ipsum fermentum metus convallis consequat. Suspendisse in quam. Integer viverra consequat nisi. Donec rutrum turpis non eros. </p> </div> <div class="col c20"><p>Praesent et ipsum fermentum metus convallis consequat. Suspendisse in quam. Integer viverra consequat nisi. Donec rutrum turpis non eros. </p> </div> <div class="col c20"><p>Praesent et ipsum fermentum metus convallis consequat. Suspendisse in quam. Integer viverra consequat nisi. Donec rutrum turpis non eros.</p> </div> <div class="col c20"><p>Praesent et ipsum fermentum metus convallis consequat. Suspendisse in quam. Integer viverra consequat nisi. Donec rutrum turpis non eros.</p> </div> <div class="col c20"><p>Praesent et ipsum fermentum metus convallis consequat. Suspendisse in quam. Integer viverra consequat nisi. Donec rutrum turpis non eros.</p> </div> </div>
+<div class="clear"></div>
+<div class="col c20"><p>Praesent et ipsum fermentum metus convallis consequat. Suspendisse in quam. Integer viverra consequat nisi. Donec rutrum turpis non eros. </p> </div> <div class="col c20"><p>Praesent et ipsum fermentum metus convallis consequat. Suspendisse in quam. Integer viverra consequat nisi. Donec rutrum turpis non eros. </p> </div> <div class="col c20"><p>Praesent et ipsum fermentum metus convallis consequat. Suspendisse in quam. Integer viverra consequat nisi. Donec rutrum turpis non eros.</p> </div> <div class="col c20"><p>Praesent et ipsum fermentum metus convallis consequat. Suspendisse in quam. Integer viverra consequat nisi. Donec rutrum turpis non eros.</p> </div> <div class="col c20"><p>Praesent et ipsum fermentum metus convallis consequat. Suspendisse in quam. Integer viverra consequat nisi. Donec rutrum turpis non eros.</p> </div>
+<div class="clear"></div>
+<div class="col c33"><p>Praesent et ipsum fermentum metus convallis consequat. Suspendisse in quam. Integer viverra consequat nisi. Donec rutrum turpis non eros. </p> </div> <div class="col c33"><p>Praesent et ipsum fermentum metus convallis consequat. Suspendisse in quam. Integer viverra consequat nisi. Donec rutrum turpis non eros. </p> </div> <div class="col c33"><p>Praesent et ipsum fermentum metus convallis consequat. Suspendisse in quam. Integer viverra consequat nisi. Donec rutrum turpis non eros.</p> </div>
+<div class="clear"></div>
+<div class="col c50 mb2"> <p>Praesent et ipsum fermentum metus convallis consequat. Suspendisse in quam. Integer viverra consequat nisi. Donec rutrum turpis non eros. </p> </div>
+<div class="col c50 mb2"> <p>Praesent et ipsum fermentum metus convallis consequat. Suspendisse in quam. Integer viverra consequat nisi. Donec rutrum turpis non eros. </p> </div>
+<div class="clear"></div>
+<div class="col c50 blank"> <hr class="line" /> <div class="col c30 mt2"><p><img src="http://placehold.it/100x100/333333/ffffff.gif" alt="-" class="mb1" /> Praesent et ipsum fermentum metus convallis consequat. Suspendisse in quam. Integer viverra consequat nisi. Donec rutrum turpis non eros. </p> </div> <div class="col c30 mt2"><p><img src="img/100g.gif" alt="-" class="mb1" /> Praesent et ipsum fermentum metus convallis consequat. Suspendisse in quam. Integer viverra consequat nisi. Donec rutrum turpis non eros. </p> </div> <div class="col c30 mt2"><p><img src=http://placehold.it/100x100/333333/ffffff.giff" alt="-" class="mb1" /> Praesent et ipsum fermentum metus convallis consequat. Suspendisse in quam. Integer viverra consequat nisi. Donec rutrum turpis non eros.</p> </div> </div>
+<div class="col c50 blank"> <hr class="line" /> <div class="col c30 mt2"><p><img src="http://placehold.it/100x100/333333/ffffff.gif" alt="-" class="mb1" />Praesent et ipsum fermentum metus convallis consequat. Suspendisse in quam. Integer viverra consequat nisi. Donec rutrum turpis non eros.</p> </div> <div class="col c30 mt2"><p><img src="img/100g.gif" alt="-" class="mb1" /> Praesent et ipsum fermentum metus convallis consequat. Suspendisse in quam. Integer viverra consequat nisi. Donec rutrum turpis non eros.</p> </div> <div class="col c30 mt2"><p><img src=http://placehold.it/100x100/333333/ffffff.giff" alt="-" class="mb1" /> Praesent et ipsum fermentum metus convallis consequat. Suspendisse in quam. Integer viverra consequat nisi. Donec rutrum turpis non eros.</p> </div> </div>
+<div class="clear"></div>
+<hr class="full-line mb2" />
+<div class="c100 equal mt2">
+<div class="col c33 mt1"> <p>33.33% Praesent et ipsum fermentum metus convallis consequat. Suspendisse in quam. Integer viverra consequat nisi. Donec rutrum turpis non eros. Pellentesque mauris. Sed facilisis augue quis enim. Quisque posuere, velit sit amet iaculis venenatis, dui lectus molestie magna, vel fringilla ante nunc eget urna. Nam eget lorem sit amet enim egestas pharetra. </p> </div>
+<div class="col c33 mt1"> <p><img src="http://placehold.it/100x100/333333/ffffff.gif" alt="-" class="mb1" />
+Praesent et ipsum fermentum metus convallis consequat. Suspendisse in quam. Integer viverra consequat nisi. Donec rutrum turpis non eros. Pellentesque mauris. Sed facilisis augue quis enim. Quisque posuere, velit sit amet iaculis venenatis, dui lectus molestie magna, vel fringilla ante nunc eget urna. Nam eget les posuere cubilia Curae </p> </div> <div class="col c33 mt1"> <p>Praesent et ipsum fermentum metus convallis consequat. Suspendisse in quam. Integer viverra consequat nisi. Donec rutrum turpis non eros. Pellentesque mauris. Sed facilisis augue quis enim. Quisque posuere, velit sit amet iaculis venenatis, dui lectus molestie magna, vel fringilla ante nunc eget urna. Nam eget lorem sit amet enim egestas pharetra. </p> </div>
+</div>
+<hr class="full-line" />
+<div class="c50 mt1">
+<p>
+<picture>
+<source media="(min-width: 45em)" srcset="http://placehold.it/100x100/333333/ffffff.gif">
+<source media="(min-width: 32em)" srcset="http://placehold.it/100x100/333333/ffffff.gif">
+<img src="http://placehold.it/100x100/333333/ffffff.gif" alt="-" class="mb1" />
+</picture>
+Test &lt;picture&gt; element.</p>
+</div>
+<div class="c50 mt1">
+<p>
+<img sizes="(max-width: 30em) 100vw, (max-width: 50em) 50vw, calc(33vw - 100px)" srcset="http://placehold.it/200x200/333333/ffffff.gif 200w, http://placehold.it/400x400/333333/ffffff.gif 400w, http://placehold.it/800x800/333333/ffffff.gif 800w, http://placehold.it/1600x1600/333333/ffffff.gif 1600w" src="http://placehold.it/100x100/333333/ffffff.gif" alt="-" class="mb1" />
+Test &lt;img&gt; element.</p>
+</div>
+<div class="clear"></div> <hr class="full-line" />
+</main> <div class="gutter"></div> </div> <div class="footer"><div class="footer-inner"><small>Copyright &copy; 2014. Handcrafted by cara-tm. License: MIT license. Version beta 3.0. <br>Support for IE 5.x will come next (for final version). <a href="https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Fcara-tm.com%2Fsandbox%2Fclients%2Falison.html" target="_blank">Google Page Speed</a>.</small></div></div> </body></html>
