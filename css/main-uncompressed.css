@@ -681,6 +681,10 @@ hr:after {
     display: none;
 }
 
+::-moz-selection{background:#ddd;color:#000}
+
+::selection{background:#ddd;color:#000}
+
 /*
  * Ressources and best practices
  *
