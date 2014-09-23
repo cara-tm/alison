@@ -377,6 +377,7 @@ x:-o-prefocus,.top {
     color: #111;
 }
 
+/* @support feature temporarly disabled */
 /*@supports (display: flex) or (display: flexbox) {*/
 
   .flex .col {
@@ -409,6 +410,12 @@ x:-o-prefocus,.top {
 */
 
 @media only screen and (min-width:320px) and (max-width:639px) {
+	
+    .wrapper{width:100%;}
+
+    .header-inner{padding: 3em 5%;}
+
+    .main{margin:0 2%;}
 
     .c5,.c10,.c20,.c25,.c33,.c30,.c50,.c100 {
         width: 100%;
