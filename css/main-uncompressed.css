@@ -532,11 +532,13 @@ h1 {
 
 h2 {
     font-size: 1.2em;
+    font-weight: 400;
 }
 
 p {
     word-wrap: break-word;
     word-break:break-word;
+    font:normal normal normal 1.3em/1.6em Constantia,Palatino,"Palatino Linotype","Palatino LT STD",Georgia,serif;
 }
 
 /* Styles for horizontal line */
