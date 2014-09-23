@@ -536,6 +536,7 @@ h2 {
 
 p {
     word-wrap: break-word;
+    word-break:break-word;
 }
 
 /* Styles for horizontal line */
