@@ -490,7 +490,7 @@ x:-o-prefocus,.top {
 	  background-image: url(http://placeimg.com/1440/600/nature);
 */
     background-image: url(../img/trees.jpg);
-    background-position: 50%;
+    background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
 }
