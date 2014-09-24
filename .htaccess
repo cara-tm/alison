@@ -1,4 +1,18 @@
+DirectoryIndex index.php index.html
 
+Options +FollowSymLinks
+Options -Indexes
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+
+    # 301 redirect to domain without 'www.'
+    RewriteCond %{HTTP_HOST} ^www.my-domain.com$ [NC]
+    RewriteRule ^(.*)$ http://my-domain.com/$1 [R=301,L]
+
+
+</IfModule>
 
 <IfModule mod_gzip.c>
     mod_gzip_on       Yes
