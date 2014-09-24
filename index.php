@@ -189,7 +189,7 @@ IE6, IE7, IE8, IE9, IE10, IE11, FireFox 1.5.x + (Mac + PC), FireFox mobile Andro
 Praesent et ipsum fermentum metus convallis consequat. Suspendisse in quam. Integer viverra consequat nisi. Donec rutrum turpis non eros. Pellentesque mauris. Sed facilisis augue quis enim. Quisque posuere, velit sit amet iaculis venenatis, dui lectus molestie magna, vel fringilla ante nunc eget urna. Nam eget les posuere cubilia Curae </p> </div> <div class="col c33 mt1"> <p>Praesent et ipsum fermentum metus convallis consequat. Suspendisse in quam. Integer viverra consequat nisi. Donec rutrum turpis non eros. Pellentesque mauris. Sed facilisis augue quis enim. Quisque posuere, velit sit amet iaculis venenatis, dui lectus molestie magna, vel fringilla ante nunc eget urna. Nam eget lorem sit amet enim egestas pharetra. </p> </div>
 </div>
 <hr class="full-line" />
-<div class="c50 mt1">
+<div class="col c50 mt1">
 <p>
 <picture>
 <source media="(min-width: 45em)" srcset="http://placehold.it/100x100/333333/ffffff.gif">
@@ -198,7 +198,7 @@ Praesent et ipsum fermentum metus convallis consequat. Suspendisse in quam. Inte
 </picture>
 Test &lt;picture&gt; element.</p>
 </div>
-<div class="c50 mt1">
+<div class="col c50 mt1">
 <p>
 <img sizes="(max-width: 30em) 100vw, (max-width: 50em) 50vw, calc(33vw - 100px)" srcset="http://placehold.it/200x200/333333/ffffff.gif 200w, http://placehold.it/400x400/333333/ffffff.gif 400w, http://placehold.it/800x800/333333/ffffff.gif 800w, http://placehold.it/1600x1600/333333/ffffff.gif 1600w" src="http://placehold.it/100x100/333333/ffffff.gif" alt="-" class="mb1" />
 Test &lt;img&gt; element.</p>
