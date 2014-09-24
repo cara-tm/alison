@@ -3,6 +3,7 @@
 <!-- fb Open Graph --> <meta property="og:title" content=""> <meta property="og:type" content="website"> <meta property="og:url" content=""> <meta property="og:image" content=""> <meta property="og:site_name" content=""> <meta property="og:description" content="">
 <!-- twitter Open Graph --> <meta name="twitter:card" content="summary"> <meta name="twitter:site" content=""> <meta property="twitter:image" content=""> <meta property="twitter:title" content=""> <meta property="twitter:url" content=""> <meta name="twitter:creator" content=""> <meta name="twitter:description" content="">
 <!-- Google Schema --> <meta itemprop="name" content=""> <meta itemprop="title" content=""> <meta itemprop="description" content=""> <meta itemprop="url" content=""> <meta itemprop="image" content="">
+<link rel="canonical" href="">
 <link rel="author" href="https://plus.google.com/+PatrickLEFEVRE-lowel" title="Patrick LEFEVRE"> <!--[if lt IE 9 & !IEMobile]><link href="css/fonts_without_base64.css" media="all" rel="stylesheet"><![endif]--> <!--[if gt IE 8 | IEMobile]><!--><link href="css/fonts_with_base64.css" media="all" rel="stylesheet"><!--<![endif]--> <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7"><meta http-equiv="X-UA-Compatible" content="chrome=1"><meta http-equiv="imagetoolbar" content="no"><![endif]--> <script>
 <!--	<?php @include_once('../js/global.js'); ?> -->
 /*!
