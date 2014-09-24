@@ -5,7 +5,7 @@
  * @link:     http://alison.cara-tm.com
  * @license:  MIT license. You can use this for all purposes (personal or commercial). Keep this lines unchanged.
  * @date:     18 Sept 2014
- * @revision: 23 Sept 2014
+ * @revision: 24 Sept 2014
  */
 
 @charset "UTF-8";
@@ -120,7 +120,7 @@ sub {
     top: .5ex;
 }
 
-tt,code,kbd,samp,pre,.code {
+tt, code, kbd, samp, pre, .code {
     font-family: Consolas,'andale mono','lucida console','courier new',monospace;
 }
 
@@ -389,7 +389,7 @@ x:-o-prefocus,.top {
 /* @support feature temporarly disabled */
 /*@supports (display: flex) or (display: flexbox) {*/
 
-  .flex .col {
+  .flex:not(.msie) .col {
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-box;
@@ -403,11 +403,11 @@ x:-o-prefocus,.top {
     flex-grow: 1;
   }
 
-  .flex .row:last-child {
+  .flex:not(.msie) .row:last-child {
     margin-bottom: 0;
   }
 
-  .flex .col {
+  .flex:not(.msie) .col {
     -webkit-flex: 1 auto;
     flex: 1 auto;
   }
