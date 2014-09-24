@@ -181,6 +181,14 @@ html[xmlns] .cf {
     position: absolute;
 }
 
+.indent {
+    display: block;
+    display: inline-block;
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+}
+
 a {
     color: #333;
 }
