@@ -50,6 +50,7 @@ article,aside,details,figcaption,figure,footer,header,main,menu,nav,section {
 }
 
 body {
+    text-align: center;
     line-height: 1;
 }
 
