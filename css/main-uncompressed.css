@@ -386,10 +386,10 @@ x:-o-prefocus,.top {
     color: #111;
 }
 
-/* @support feature temporarly disabled */
+/* @support feature temporarly disabled for lack of support */
 /*@supports (display: flex) or (display: flexbox) {*/
 
-  .flex:not(.msie) .col {
+  .flex:not(.undefined) .col {
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-box;
@@ -403,11 +403,11 @@ x:-o-prefocus,.top {
     flex-grow: 1;
   }
 
-  .flex:not(.msie) .row:last-child {
+  .flex:not(.undefined) .row:last-child {
     margin-bottom: 0;
   }
 
-  .flex:not(.msie) .col {
+  .flex:not(.undefined) .col {
     -webkit-flex: 1 auto;
     flex: 1 auto;
   }
