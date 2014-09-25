@@ -218,5 +218,12 @@ Test &lt;img&gt; element.</p>
 $start = '2014';
 echo( ($start < date('Y') ? $start.'-'.date('Y') : $start) );
 
-?>. Handcrafted by cara-tm. License: MIT license. Version beta 3.0. <br>Support for IE 5.x will come next (for final version). <a href="https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Fcara-tm.com%2Fsandbox%2Fclients%2Falison.html" target="_blank">Google Page Speed</a>.</small></div></div> </body></html>
+?>. Handcrafted by cara-tm. License: MIT license. Version beta 3.0. <br>Support for IE 5.x will come next (for final version). <a href="https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Fcara-tm.com%2Fsandbox%2Fclients%2Falison.html" target="_blank">Google Page Speed</a>.</small></div></div> 
+<script>
+// Add a script element as a child of the body
+function downloadJSAtOnload(){var element=document.createElement("script");element.src="../js/global.js";document.body.appendChild(element)}
+// Check for browser support of event handling capability
+if(window.addEventListener)window.addEventListener("load",downloadJSAtOnload,false);else if(window.attachEvent) window.attachEvent("onload",downloadJSAtOnload);else window.onload=downloadJSAtOnload;
+</script>
+</body></html>
 
