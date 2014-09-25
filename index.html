@@ -6,10 +6,10 @@
 
 <link rel="canonical" href=""> <link rel="author" href="https://plus.google.com/+PatrickLEFEVRE-lowel" title="Patrick LEFEVRE"> <!--[if lt IE 9 & !IEMobile]><link href="css/fonts_without_base64.css" media="all" rel="stylesheet"><![endif]--> <!--[if gt IE 8 | IEMobile]><!--><link href="css/fonts_with_base64.css" media="all" rel="stylesheet"><!--<![endif]--> <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7"><meta http-equiv="X-UA-Compatible" content="chrome=1"><meta http-equiv="imagetoolbar" content="no"><![endif]--> <script>
 <!--	<% include "/path/to/initial.js" %> -->
+var el=document.querySelector('html');el.classList.remove('no-js');
 /*!
 loadCSS: CSS file loader asynchronously. [c]2014 @scottjehl, Filament Group, Inc. Licensed MIT
 */
-var el=document.querySelector('html');el.classList.remove('no-js');
 function loadCSS(e,t,n){"use strict";var i=window.document.createElement("link");var o=t||window.document.getElementsByTagName("script")[0];i.rel="stylesheet";i.href=e;i.media="only x";o.parentNode.insertBefore(i,o);setTimeout(function(){i.media=n||"all"})};
 // load a file: loadCSS( href, before, media )
 loadCSS( '../css/main.css', '', 'screen' );
