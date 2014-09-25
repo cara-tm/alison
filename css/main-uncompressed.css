@@ -424,7 +424,10 @@ x:-o-prefocus,.top {
 
     .header-inner{padding: 3em 5%;}
 
-    .main{margin:0 2%;}
+    .main{
+    	width:96% !important;
+        margin:0 2% !important;
+    }
 
     .c5,.c10,.c20,.c25,.c33,.c30,.c50,.c100 {
         width: 100%;
