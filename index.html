@@ -92,7 +92,7 @@ width:calc(100% * 1 / 3)}
 .clear{clear:both;width:100%;height:0.5px}
 .col p{padding:1em;color:#111}
 .flex:not(.undefined) .col{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex display:-webkit-flex;display:flex;-webkit-flex-flow:row wrap;flex-flow:row wrap;align-items:flex-start;align-content:flex-start;flex-grow:1}.flex:not(.undefined) .row:last-child{margin-bottom:0}.flex:not(.undefined) .col{-webkit-flex:1 auto;flex:1 auto}
-@media only screen and (min-width:320px) and (max-width:639px){.wrapper{width:100%;}.header-inner{padding:3em 5%}.main{margin:0 2%}.c5,.c10,.c20,.c25,.c33,.c30,.c50,.c100{width:100%;transition: all .5s ease-in-out}.footer-inner{width:96% !important;padding-right:2% !important;padding-left:2% !important}}
+@media only screen and (min-width:320px) and (max-width:639px){.wrapper{width:100%;}.header-inner{padding:3em 5%}.main{width:96% !important;margin:0 2% !important}.c5,.c10,.c20,.c25,.c33,.c30,.c50,.c100{width:100%;transition: all .5s ease-in-out}.footer-inner{width:96% !important;padding-right:2% !important;padding-left:2% !important}}
 @media only screen and (min-width:640px) and (max-width:950px){.c5,.c10,.c20,.c25,.c30{width:100%;transition: all .5s ease-in-out}}
 @media only screen and (max-width:960px){.c5,.c10,.c20,.c25,.c33,.c30,.c50,.c100{}}
 /* End Grid */
