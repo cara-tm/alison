@@ -5,7 +5,7 @@
  * @link:     http://alison.cara-tm.com
  * @license:  MIT license. You can use this for all purposes (personal or commercial). Keep this lines unchanged.
  * @date:     18 Sept 2014
- * @revision: 24 Sept 2014
+ * @revision: 25 Sept 2014
  */
 
 @charset "UTF-8";
@@ -418,28 +418,9 @@ x:-o-prefocus,.top {
   =Media queries
 */
 
-@media only screen and (min-width:320px) and (max-width:639px) {
-	
-    .wrapper{width:100%;}
-
-    .header-inner{padding: 3em 5%;}
-
-    .main{
-    	width:96% !important;
-        margin:0 2% !important;
-    }
-
-    .c5,.c10,.c20,.c25,.c33,.c30,.c50,.c100 {
-        width: 100%;
-        transition: all .5s ease-in-out;
-    }
-
-    .footer-inner {
-        width: 96%!important;
-        padding-right: 2%!important;
-        padding-left: 2%!important;
-    };
-
+@media only screen and (max-width:960px) {
+    
+    
 }
 
 @media only screen and (min-width:640px) and (max-width:950px) {
@@ -451,9 +432,28 @@ x:-o-prefocus,.top {
 
 }
 
-@media only screen and (max-width:960px) {
-    
-    
+@media only screen and (min-width:320px) and (max-width:639px) {
+	
+    .wrapper{width:100%;}
+
+    .header-inner{padding: 3em 5%;}
+
+    .c5,.c10,.c20,.c25,.c33,.c30,.c50,.c100 {
+        width: 100%;
+        transition: all .5s ease-in-out;
+    }
+
+    .main{
+    	width:96%;
+        margin:0 2%;
+    }
+
+    .footer-inner {
+        width: 96%;
+        padding-right: 2%;
+        padding-left: 2%;
+    };
+
 }
 
 .footer,.gutter {
