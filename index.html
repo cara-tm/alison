@@ -12,7 +12,7 @@ loadCSS: CSS file loader asynchronously. [c]2014 @scottjehl, Filament Group, Inc
 var el=document.querySelector('html');el.classList.remove('no-js');
 function loadCSS(e,t,n){"use strict";var i=window.document.createElement("link");var o=t||window.document.getElementsByTagName("script")[0];i.rel="stylesheet";i.href=e;i.media="only x";o.parentNode.insertBefore(i,o);setTimeout(function(){i.media=n||"all"})};
 // load a file: loadCSS( href, before, media )
-loadCSS( 'css/main.css', '', 'screen' );
+loadCSS( '../css/main.css', '', 'screen' );
 var Detect=(function(){var props="borderRadius,svg,columns,flex".split(","),CSSprefix="Webkit,Moz,O,ms,Khtml".split(","),d=document.createElement("detect"),test=[],p,pty;function TestPrefixes(prop){var Uprop=prop.charAt(0).toUpperCase()+prop.substr(1),All=(prop+' '+CSSprefix.join(Uprop+' ')+Uprop).split(' ');for(var n=0,np=All.length;n<np;n++){if(d.style[All[n]]==="") return true}return false}for(p in props){pty=props[p];test[pty]=TestPrefixes(pty);}return test;}());var html=document.getElementsByTagName('html')[0];for(t in Detect){if(Detect[t]) html.className+=' '+t.toLowerCase()};</script> <style type="text/css" media="all">
 <!--	<% include "/path/to/template-xyz-critical.css" %>	-->
 /*
