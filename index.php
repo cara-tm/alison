@@ -50,7 +50,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 .static{position:static}
 .relative{position:relative}
 .absolute{position:absolute}
-.indent{display:block;display:inline-block;overflow:hidden;text-indent:100%;white-space:nowrap}
+.indent{display:block;display:inline-block;overflow:hidden;text-indent:101%;white-space:nowrap}
 a{color:#333}
 a:hover{color:#000}
 img{display:block;width:100%;height:auto;vertical-align:top;text-align:center}
