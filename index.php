@@ -224,7 +224,7 @@ Test &lt;img&gt; element.</p>
 </main> 
 <div class="gutter"></div> 
 </div> 
-<div class="c100 footer">
+<div class="footer">
 <footer role="contentinfo" class="c100 cf"><div class="footer-inner"><small>Copyright &copy; <?php
 /*
  * Return dates for copyright notice.
