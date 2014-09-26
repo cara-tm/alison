@@ -114,7 +114,7 @@ width:calc(100% * 1 / 3)}
 /* IE fallback */
 width:116em\9;
 max-width:1440px;max-width:var(--max-width);margin:0 auto;height:85.75%;padding:2em 0 0 0}
-.footer-inner *{padding:0 1%}
+.footer-inner small{padding:0 1%}
 .footer-inner small{display:block;font:normal normal normal 1.5em/1.3em Arial}
 .hero{display:block;overflow:hidden;position:relative;width:100%;max-width:100%;max-height:600px;*height:600px;margin:0 auto 1em;background-image:url(http://placeimg.com/1440/600/nature);background-position:center center;background-repeat:no-repeat;background-size:cover}
 .hero:before{content:"";display:block;width:100%}
