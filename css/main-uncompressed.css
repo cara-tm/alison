@@ -476,7 +476,7 @@ x:-o-prefocus,.top {
     padding: 2em 0 0 0;
 }
 
-.footer-inner * {
+.footer-inner small {
     padding: 0 1%;
 }
 
