@@ -576,8 +576,9 @@ p {
 hr:after {
     content: "\2022";
     background: #fff;
-    vertical-align:;
-    font: normal normal normal 1.5em/0 Arial;
+    vertical-align: middle;
+    color: #333;
+    font: normal normal normal 1.5em/1px Arial;
 }
 
 /*
