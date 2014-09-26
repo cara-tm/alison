@@ -558,7 +558,7 @@ p {
 .line, .full-line {
     display: block;
     float: right;
-    width: 100%;
+    width: 99.95%;
     height: 1px;
     margin: 0;
     background: #333;
