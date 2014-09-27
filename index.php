@@ -108,7 +108,7 @@ width:calc(100% * 1 / 3)}
 .mr3{margin-right:3em}
 .mb3{margin-bottom:3em}
 .ml3{margin-left:3em}
-.footer,.gutter{height:140px}
+.footer,footer,.gutter{height:140px}
 .wrapper,footer-inner{font-size:1.5em;line-height:1.75em}
 .footer-inner{width:95%;
 /* IE fallback */
