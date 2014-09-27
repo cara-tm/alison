@@ -456,7 +456,7 @@ x:-o-prefocus,.top {
 
 }
 
-.footer,.gutter {
+.footer, footer, .gutter {
     height: 140px;
 }
 
