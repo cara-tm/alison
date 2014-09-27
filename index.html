@@ -143,7 +143,7 @@ h1,h2,h3,h4,h5,h6{}h1{font-size:3em;line-height:1em}h2{font-size:1.2em;font-weig
 </noscript>
 </head>
 <body>
-<div class="wrapper">
+<div class="wrapper cf">
 <header role="banner" class="header c100">
 <div class="header-inner">
 <h1>Alison CSS Grid</h1>
