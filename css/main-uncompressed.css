@@ -295,8 +295,8 @@ x:-o-prefocus,.top {
 
 .wrapper {
     width: 95%;
-/* IE fallback */
-    width: 75em\9;
+/* IE 6 <= fallback */
+    _width: 75em;
     max-width: 1440px;
     max-width: var(--max-width);
     min-height: 100%;
@@ -470,8 +470,8 @@ x:-o-prefocus,.top {
     width: 95%;
     max-width: 1440px;
     max-width: var(--max-width);
-/*  IE fallback */
-    width: 116em\9;
+/*  IE 6 <= fallback */
+    _width: 112.5em;
     margin: 0 auto;
     height: 85.75%;
     padding: 2em 0 0 0;
