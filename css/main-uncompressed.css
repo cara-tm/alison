@@ -184,6 +184,7 @@ html[xmlns] .cf {
 .indent {
     display: block;
     display: inline-block;
+    _display/**/: none;
     overflow: hidden;
     text-indent: 101%;
     white-space: nowrap;
