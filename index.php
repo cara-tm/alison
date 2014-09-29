@@ -265,12 +265,10 @@ echo( ($start < date('Y') ? $start.'-'.date('Y') : $start) );
 </footer> 
 </div>
 <script>
-window.addEventListener("load",function(){
 // Add a script element as a child of the body
-function downloadJSAtOnload(){var element=document.createElement("script");element.src="../js/global.js";document.body.appendChild(element)}
+function downloadJSAtOnload(){var element=document.createElement("script");element.src="../js/global.js";document.body.appendChild(element);}
 // Check for browser support of event handling capability
-if(window.addEventListener)window.addEventListener("load",downloadJSAtOnload,false);else if(window.attachEvent) window.attachEvent("onload",downloadJSAtOnload);else window.onload=downloadJSAtOnload;
-)};
+if(window.addEventListener) window.addEventListener("load", downloadJSAtOnload, false); else if (window.attachEvent) window.attachEvent("onload", downloadJSAtOnload); else  window.onload=downloadJSAtOnload;
 </script>
 </body></html>
 
