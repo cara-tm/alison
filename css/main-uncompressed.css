@@ -58,15 +58,15 @@ body * {
     text-align: left;
 }
 
-ol,ul {
+ol, ul {
     list-style: none;
 }
 
-blockquote,q {
+blockquote, q {
     quotes: none;
 }
 
-blockquote:before,blockquote:after,q:before,q:after {
+blockquote:before, blockquote:after, q:before, q:after {
     content: none;
 }
 
@@ -88,7 +88,7 @@ table {
     border-spacing: 0;
 }
 
-input[type=submit],label,select {
+input[type=submit], label, select {
     cursor: pointer;
 }
 
@@ -101,7 +101,7 @@ a {
     -moz-outline: 0 none;
 }
 
-sup,sub {
+sup, sub {
     position: relative;
     height: 0;
     vertical-align: baseline;
@@ -317,7 +317,7 @@ x:-o-prefocus,.top {
   =Grid System
 */
 
-.c5,.c10,.c20,.c25,.c33,.c30,.c50,.c100 {
+.c5, .c10, .c20, .c25, .c33, .c30, .c40, .c50, .c100 {
     float: left;
     display: inline;
     margin-bottom: 1em;
@@ -362,6 +362,11 @@ x:-o-prefocus,.top {
 .c33 {
     width: 33.33333333333334%;
     width: calc(100% * 1 / 3);
+}
+
+.c40 {
+    width: 40%;
+    width: calc(100% * 1 / 2.5);
 }
 
 .c50 {
@@ -457,11 +462,15 @@ x:-o-prefocus,.top {
 
 }
 
+/*
+ End media queries
+ */
+
 .footer, footer, .gutter {
     height: 140px;
 }
 
-.wrapper,footer-inner {
+.wrapper, footer-inner {
     font-size: 1.5em;
     line-height: 1.75em;
 }
@@ -589,6 +598,7 @@ hr:after {
  */
 
 @media only screen and (-Webkit-min-device-pixel-ratio:1.5),only screen and (-moz-min-device-pixel-ratio:1.5),only screen and (-o-min-device-pixel-ratio:3/2),only screen and (min-device-pixel-ratio:1.5) {
+
     body {
         background: #eee;
     }
@@ -605,6 +615,7 @@ hr:after {
 }
 
 @media only screen and (-Webkit-min-device-pixel-ratio:2),only screen and (-moz-min-device-pixel-ratio:2),only screen and (-o-min-device-pixel-ratio:4/2),only screen and (min-device-pixel-ratio:2) {
+
     body {
         background: #ddd;
     }
@@ -626,7 +637,7 @@ hr:after {
  * Concerns non structural layout: typo, colors, backgrounds etc.
 */
 
-.col p,.equal {
+.col p, .equal {
     background: #eee;
 }
 
@@ -634,13 +645,17 @@ hr:after {
     background: 0;
 }
 
-.top,.footer {
+.top, .footer {
     background: #eee;
 }
 
 .footer-inner {
     background: #fff;
 }
+
+/*
+ =Menu
+ */
 
 #page-select select {
     display: inline;
@@ -694,6 +709,10 @@ hr:after {
 #page-select input {
     display: none;
 }
+
+/*
+ =Colors select
+ */
 
 ::-moz-selection{background:#ddd;color:#000}
 
