@@ -443,7 +443,7 @@ x:-o-prefocus,.top {
     .c5,.c10,.c20,.c25,.c30 {
         width: 100%;
         transition: all .5s ease-in-out;
-    };
+    }
 
 }
 
@@ -467,7 +467,7 @@ x:-o-prefocus,.top {
         width: 96%;
         padding-right: 2%;
         padding-left: 2%;
-    };
+    }
 
 }
 
@@ -568,7 +568,7 @@ h2 {
 
 p {
     word-wrap: break-word;
-    word-break:break-word;
+    word-break: break-all;
     font:normal normal normal 1.3em/1.6em Constantia,Palatino,"Palatino Linotype","Palatino LT STD",Georgia,serif;
 }
 
