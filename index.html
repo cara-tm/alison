@@ -87,8 +87,8 @@ width:calc(100% * 1 / 3)}
 /* IE6 <= hack */
 * html .c30{margin-right:-3px;padding-right:3px}
 .c33{width:33.33333333333334%;width:calc(100% * 1 / 3)}
-.c40{width: 40%;width: calc(100% * 1 / 2.5)}
-.c50{width:50%;/*width:calc(100% * 1 / 2)*/}
+.c40{width:40%;width:calc(100% * 1 / 2.5)}
+.c50{width:50%}
 .c100{width:100%;width:calc(100% * 1 / 1)}
 .clear{clear:both;width:100%;height:0.5px}
 .col p{padding:1em;color:#111}
