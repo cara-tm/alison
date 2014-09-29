@@ -29,7 +29,7 @@ if( $detect->isMobile() && !$detect->isTablet() ){
 <link rel="canonical" href="">
 <link rel="author" href="https://plus.google.com/+PatrickLEFEVRE-lowel" title="Patrick LEFEVRE"> <!--[if lt IE 9 & !IEMobile]><link href="css/fonts_without_base64.css" media="all" rel="stylesheet"><![endif]--> <!--[if gt IE 8 | IEMobile]><!--><link href="css/fonts_with_base64.css" media="all" rel="stylesheet"><!--<![endif]--> <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7"><meta http-equiv="X-UA-Compatible" content="chrome=1"><meta http-equiv="imagetoolbar" content="no"><![endif]--> <script>
 <!--	<?php @include_once('../js/global.js'); ?> -->
-var el=document.querySelector('html');el.classList.remove('no-js');
+var el=document.querySelector('html');el.classList.remove('no-js');var htmlEl=document.getElementsByTagName('html')[0];htmlEl.className='js hide-fonts';if(document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#BasicStructure", "1.1")){htmlEl.className += ' svg';}setTimeout(function(){htmlEl.className=htmlEl.className.replace(' hide-fonts', '');},500);
 /*!
 loadCSS: CSS file loader asynchronously. [c]2014 @scottjehl, Filament Group, Inc. Licensed MIT
 */
