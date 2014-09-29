@@ -317,7 +317,7 @@ x:-o-prefocus,.top {
   =Grid System
 */
 
-.c5, .c10, .c20, .c25, .c33, .c30, .c40, .c50, .c100 {
+.c5, .c10, .c20, .c25, .c33, .c30, .c40, .c50, .c60, .c100 {
     float: left;
     display: inline;
     margin-bottom: 1em;
@@ -367,6 +367,11 @@ x:-o-prefocus,.top {
 .c40 {
     width: 40%;
     width: calc(100% * 1 / 2.5);
+}
+
+.c60 {
+    width: 60%;
+    width: calc(100% * 3 / 5);
 }
 
 .c50 {
