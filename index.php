@@ -70,7 +70,7 @@ _width:75em;
 max-width:1440px;max-width:var(--max-width);min-height:100%;height:auto !important;height:100%;margin:0 auto -140px;-webkit-transition:all .5s ease-in-out;transition:all .5s ease-in-out}
 .header-inner{padding:3em 1%;background:#fff;font-family:'Source Sans Pro',sans-serif}
 /* Grid system */
-.c5,.c10,.c20,.c25,.c33,.c30,.c40,.c50,.c100{
+.c5,.c10,.c20,.c25,.c33,.c30,.c40,.c50,.c60,.c100{
 float:left;display:inline;margin-bottom:1em;
 /* IE margin hack */
 *margin-right: -3px;
@@ -89,6 +89,7 @@ width:calc(100% * 1 / 3)}
 .c33{width:33.33333333333334%;width:calc(100% * 1 / 3)}
 .c40{width:40%;width:calc(100% * 1 / 2.5)}
 .c50{width:50%}
+.c60{width:60%;width:calc(100% * 3 / 5)}
 .c100{width:100%;width:calc(100% * 1 / 1)}
 .clear{clear:both;width:100%;height:0.5px}
 .col p{padding:1em;color:#111}
