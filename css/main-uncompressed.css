@@ -472,7 +472,7 @@ x:-o-prefocus,.top {
 
 }
 
-@media only screen and (min-width: 340px) {
+@media only screen and (max-width:450px) {
 
     .outer-gallery {
         width: 104% !important;
@@ -493,8 +493,8 @@ x:-o-prefocus,.top {
     }
 
     .thumb {
-        float: none;
-        display: inline;
+        float: none !important;
+        display: inline !important;
         height: 100%;
         margin: 0 1% 0 0;
         cursor: move;
