@@ -460,8 +460,8 @@ x:-o-prefocus,.top {
     }
 
     .main{
-    	width:96%;
-        margin:0 2%;
+    	width:92%;
+        margin:0 4%;
     }
 
     .footer-inner {
@@ -475,9 +475,9 @@ x:-o-prefocus,.top {
 @media only screen and (max-width:450px) {
 
     .outer-gallery {
-        width: 104% !important;
+        width: 108%;
         height: 50%;
-        margin: 0 0 3em -2%;
+        margin: 0 0 3em -4%;
         overflow-x: hidden;
     }
 
