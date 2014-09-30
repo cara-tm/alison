@@ -119,7 +119,7 @@ width:calc(100% * 1 / 3)}
 .clear{clear:both;width:100%;height:0.5px}
 .col p{padding:1em;color:#111}
 .flex:not(.undefined) .col{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex display:-webkit-flex;display:flex;-webkit-flex-flow:row wrap;flex-flow:row wrap;align-items:flex-start;align-content:flex-start;flex-grow:1}.flex:not(.undefined) .row:last-child{margin-bottom:0}.flex:not(.undefined) .col{-webkit-flex:1 auto;flex:1 auto}
-@media only screen and (max-width:960px){.c5,.c10,.c20,.c25,.c33,.c30,.c50,.c100{}}
+@media only screen and (max-width:960px){.c5,.c10,.c20,.c25,.c33,.c30,.c40,.c50,.c60,.c100{}}
 @media only screen and (min-width:640px) and (max-width:950px){.c5,.c10,.c20,.c25,.c30{width:100%;min-height:1px;transition: all .5s ease-in-out}}
 @media only screen and (min-width:320px) and (max-width:639px){.wrapper{width:100%;}.header-inner{padding:3em 5%}.c5,.c10,.c20,.c25,.c33,.c30,.c50,.c100{width:100%;transition:all .5s ease-in-out}.main{width:96%;margin:0 2%}.footer-inner{width:96%;padding-right:2%;padding-left:2%}}
 /* End Grid */
@@ -150,7 +150,7 @@ max-width:1440px;max-width:var(--max-width);margin:0 auto;height:85.75%;padding:
 .embed-16by9:before{padding-bottom:56.25%}
 .emded-4by3:before{padding-bottom:75%}
 /* Typography */
-h1,h2,h3,h4,h5,h6{}h1{font-size:3em;line-height:1em}h2{font-size:1.2em;font-weight:400}p{word-wrap:break-word;word-break:break-all;font:normal normal normal 1.3em/1.6em Constantia,Palatino,"Palatino Linotype","Palatino LT STD",Georgia,serif;-webkit-hyphens:auto;-moz-hyphens:auto;-ms-hyphens:auto;hyphens:auto;/*-webkit-font-feature-settings:"onum" 1,"kern" 1;*/-moz-font-feature-settings:"onum" 1;-moz-font-feature-settings:"onum=1";-ms-font-feature-settings:"onum" 1;-o-font-feature-settings:"onum" 1;font-feature-settings:"onum" 1,"kern" 1}.line,.full-line{display:block;float:right;width:99.95%;height:1px;margin:0;background:#333;border:0;text-align:center;line-height:0;page-break-before:always}.line{width:96%;margin: 0 2%}hr:after{content:"\2022";background:#fff;color:#333;vertical-align:middle;font:normal normal normal 1.5em/1px Arial}
+h1,h2,h3,h4,h5,h6{}h1{font-size:3em;line-height:1em}h2{font-size:1.2em;font-weight:400}p{word-wrap:break-word;font:normal normal normal 1.3em/1.6em Constantia,Palatino,"Palatino Linotype","Palatino LT STD",Georgia,serif;-webkit-hyphens:auto;-moz-hyphens:auto;-ms-hyphens:auto;hyphens:auto;/*-webkit-font-feature-settings:"onum" 1,"kern" 1;*/-moz-font-feature-settings:"onum" 1;-moz-font-feature-settings:"onum=1";-ms-font-feature-settings:"onum" 1;-o-font-feature-settings:"onum" 1;font-feature-settings:"onum" 1,"kern" 1}.line,.full-line{display:block;float:right;width:99.95%;height:1px;margin:0;background:#333;border:0;text-align:center;line-height:0;page-break-before:always}.line{width:96%;margin: 0 2%}hr:after{content:"\2022";background:#fff;color:#333;vertical-align:middle;font:normal normal normal 1.5em/1px Arial}
 /*
  * Retina display part
  *
