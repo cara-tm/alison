@@ -248,6 +248,16 @@ Test &lt;picture&gt; element.</p>
 <img sizes="(max-width: 30em) 100vw, (max-width: 50em) 50vw, calc(33vw - 100px)" srcset="http://placehold.it/200x200/333333/ffffff.gif 200w, http://placehold.it/400x400/333333/ffffff.gif 400w, http://placehold.it/800x800/333333/ffffff.gif 800w, http://placehold.it/1600x1600/333333/ffffff.gif 1600w" src="http://placehold.it/100x100/333333/ffffff.gif" title="" alt="-" class="mb1" />
 Test &lt;img&gt; element.</p>
 </div>
+<div class="clear"></div>
+<hr class="full-line" />
+<div class="outer-gallery mt3">
+<div class="c100 gallery">
+<p class="c20 thumb"><img src="http://placehold.it/400x400/333333/ffffff.gif" title="" alt="-" /></p><p class="c5"></p>
+<p class="c20 thumb"><img src="http://placehold.it/400x400/333333/ffffff.gif" title="" alt="-" /></p><p class="c5"></p>
+<p class="c20 thumb"><img src="http://placehold.it/400x400/333333/ffffff.gif" title="" alt="-" /></p><p class="c5"></p>
+<p class="c20 thumb"><img src="http://placehold.it/400x400/333333/ffffff.gif" title="" alt="-" /></p><p class="c5"></p>
+</div>
+</div>
 </section>
 <div class="clear"></div> <hr class="full-line" />
 </main> 
