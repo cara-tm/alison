@@ -465,9 +465,9 @@ x:-o-prefocus,.top {
     }
 
     .footer-inner {
-        width: 96%;
-        padding-right: 2%;
-        padding-left: 2%;
+        width: 92%;
+        padding-right: 4%;
+        padding-left: 4%;
     }
 
 }
