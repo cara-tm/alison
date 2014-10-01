@@ -507,10 +507,24 @@ x:-o-prefocus,.top {
 
     .thumb {
         float: none !important;
-        display: inline !important;
+        display: inline-block !important;
         height: 100%;
         margin: 0 1% 0 0;
         cursor: move;
+    }
+
+    .thumb span {
+        display: block;
+        width: 100%;
+        height: 100%;
+        right: 0;
+        top: 0;
+        opacity: .8;
+        background: transparent url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAArCAYAAACTkhN2AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAHpJREFUeNrs10sKwCAQg+Gh9z+dIAiCMCdJq7Slr2XGTROwy+8HV9XMDPuhb+kfYNgIwftKKSEBHNsC9CvCdewAnmMGBqaAAgoo8MtAzlkBQ0ppHlxrjYFba4IFCxY8Bf78P2fBL5wJ33A2fOLuHvIeHXjUQzcMXgUYAPklipg5M7GFAAAAAElFTkSuQmCC') 98% center no-repeat;
+    }
+
+    .thumb span:hover {
+        background: none;
     }
 
     .gallery p:last-child,.gallery div:last-child{width:0;margin-right:0}
