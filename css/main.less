@@ -460,11 +460,11 @@ x:-o-prefocus,.top {
 
 @media only screen and (min-width:320px) and (max-width:639px) {
 	
-    .wrapper{width:100%;}
+    .wrapper{width: 100%;}
 
     .header-inner{padding: 3em 5%;}
 
-    .c5,.c10,.c20,.c25,.c33,.c30,.c40,.c50,.c60,.c100 {
+    .c5, .c10, .c20, .c25, .c33, .c30, .c40, .c50, .c60, .c100 {
         width: 100%;
         min-height: 1px;
         transition: all .5s ease-in-out;
@@ -486,10 +486,12 @@ x:-o-prefocus,.top {
 @media only screen and (max-width:450px) {
 
     .outer-gallery {
+    	overflow-x: hidden;
         width: 108% !important;
         height: 50%;
         margin: 0 0 3em -4%;
-        overflow-x: hidden;
+        padding: 1em 0;
+        background: #eee;
     }
 
     .gallery {
