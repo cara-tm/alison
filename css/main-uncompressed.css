@@ -475,10 +475,12 @@ x:-o-prefocus,.top {
 @media only screen and (max-width:450px) {
 
     .outer-gallery {
+    	overflow-x: hidden;
         width: 108%;
         height: 50%;
         margin: 0 0 3em -4%;
-        overflow-x: hidden;
+        padding: 1em 0;
+        background: #eee;
     }
 
     .gallery {
