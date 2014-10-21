@@ -656,8 +656,9 @@ p {
     width: 99.95%;
     height: 1px;
     margin: 0;
-    background: #333;
+    background: none;
     border: 0;
+    border: 1px solid #333;
     text-align: center;
     line-height: 0;
     page-break-before: always;
@@ -670,10 +671,10 @@ p {
 
 hr:after {
     content: "\2022";
-    background: #fff;
-    vertical-align: middle;
+    padding-bottom: .48em;
+    background: none;
     color: #333;
-    font: normal normal normal 1.5em/1px Arial;
+    font: normal normal normal 1.5em/0px Arial;
 }
 
 /*
