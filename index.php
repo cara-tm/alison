@@ -118,7 +118,7 @@ width:calc(100% * 1 / 3)}
 .c100{width:100%;width:calc(100% * 1 / 1)}
 .clear{clear:both;width:100%;height:0.5px}
 .col p{padding:1em;color:#111}
-.flex:not(.undefined) .col{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex display:-webkit-flex;display:flex;-webkit-flex-flow:row wrap;flex-flow:row wrap;align-items:flex-start;align-content:flex-start;flex-grow:1}.flex:not(.undefined) .row:last-child{margin-bottom:0}.flex:not(.undefined) .col{-webkit-flex:1 auto;flex:1 auto}
+.flex .col{display:box;display:flexbox;display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:-webkit-flex;display:flex;flex-direction:row;flex-wrap:wrap;align-items:stretch;justify-content:space-between;-webkit-flex-flow:row wrap;flex-flow:row wrap;align-items:flex-start;align-content:flex-start;flex-grow:1}.flex .row:last-child{margin-bottom:0}.flex .col [class^="c-"]{float:none;box-flex:1;-webkit-box-flex:1;-moz-box-flex:1;-webkit-flex:1;-ms-flex:1;flex:1}
 @media only screen and (max-width:960px){.c5,.c10,.c20,.c25,.c33,.c30,.c40,.c50,.c60,.c100{}}
 @media only screen and (min-width:640px) and (max-width:950px){.c5,.c10,.c20,.c25,.c30{width:100%;min-height:1px;transition: all .5s ease-in-out}}
 @media only screen and (min-width:320px) and (max-width:639px){.wrapper{width:100%;}.header-inner{padding:3em 5%}.c5,.c10,.c20,.c25,.c33,.c30,.c50,.c100{width:100%;transition:all .5s ease-in-out}.main{width:92%;margin:0 4%}.footer-inner{width:92%;padding-right:4%;padding-left:4%}}
